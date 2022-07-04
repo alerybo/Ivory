@@ -10,7 +10,8 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <title>Ivory</title>
   </head>
@@ -19,46 +20,164 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
         <nav class="nav__container">
-            <div class="nav__logo-container">
-                <a href="#" class="nav__logo">IVORY</a>
-            </div>
-            
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">HOME</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">ABOUT</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#shop" class="nav__link">SHOP</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#blog" class="nav__link">BLOG</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav__btn">
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-            </div>
+          <div class="nav__logo-container">
+            <a href="#" class="nav__logo">IVORY</a>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">HOME</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">ABOUT</a>
+              </li>
+              <li class="nav__item">
+                <a href="#shop" class="nav__link">SHOP</a>
+              </li>
+              <li class="nav__item">
+                <a href="#blog" class="nav__link">BLOG</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__btn">
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+          </div>
         </nav>
       </header>
       <!--==================== MAIN ====================-->
       <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
-            Hi
+          <div class="home__container">
+            <div class="home__grid">
+              <div class="home__subtitle">
+                <span class="home__subtitle-symbol">✦</span>
+                <span class="home__subtitle-text">HANDMADE</span>
+              </div>
+              <div class="home__title-container">
+                <div class="home__title-wrapper">
+                  <h1 class="home__title">IVORY</h1>
+                  <span class="home__title-subtitle">SOMETHING FOR YOU</span>
+                </div>
+                <img src="/img/home_img.png" alt="" class="home__title-img" />
+              </div>
+              <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                  <span class="home__scroll-name">SCROLL DOWN</span>
+                  <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section" id="about"></section>
+        <section class="about section" id="about">
+          <div class="section__title">
+            <span>About Us ✦ </span>
+          </div>
+          <div class="about__content">
+            <div class="about__img-wrapper">
+              <img src="./img/about_img.jpg" alt="" class="about__img">
+            </div>
+            <div class="about__data">
+              <span class="about__data-title">Ivory Clothing</span>
+              <p class="about__data-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="about__button">
+                <a href="" class="button">
+                  <span class="button-name">SHOP NOW</span>
+                  <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!--==================== SHOP ====================-->
-        <section class="shop section" id="shop"></section>
+        <section class="shop section" id="shop">
+          <div class="section__title"><span>New Arrivals ✦ </span></div>
+
+          <div class="shop__container swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!--==================== PRODUCT 1 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop1.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 2 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop2.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 3 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop3.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 4 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop4.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 5 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop5.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 6 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop6.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 7 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop7.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+              <!--==================== PRODUCT 8 ====================-->
+              <div class="shop__card swiper-slide">
+                <img src="./img/shop8.jpg" alt="" class="shop__img">
+                <a href="" class="shop__button button">
+                  <span class="button-name">ADD TO CART</span>
+                  <i class="uil uil-plus button-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-shop-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-shop-icon"></i>
+            </div>
+            <div class="swiper-pagination swiper-pagination-shop"></div>
+          </div>
+        </section>
 
         <!--==================== BLOG ====================-->
         <section class="blog section" id="blog"></section>
@@ -74,6 +193,9 @@
 
       <!--==================== MAIN JS ====================-->
       <script src="./js/app.js"></script>
+
+      <!--==================== SWIPER JS ====================-->
+      <script src="./js/swiper-bundle.min.js"></script>
     </div>
   </body>
 </html>
