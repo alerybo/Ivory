@@ -1,0 +1,59 @@
+/*==================== CONTACT ====================*/
+.contact__container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact__form {
+    width: 50%;
+    display: grid;
+  
+    border-top: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
+  }
+  
+  .contact__inputs-item {
+    width: 100%;
+    border-bottom: var(--border);
+    padding: 1rem;
+  }
+  
+  .contact__label {
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 2rem;
+    font-weight: var(--font-semi-bold);
+  }
+  
+  .contact__input {
+    display: inline-block;
+    width: 70%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+  }
+  
+  .contact__message {
+    display: flex;
+  }
+  
+  .contact__message > label {
+    color: #474747;
+    margin-right: 0.5rem;
+  }
+  
+  .input__message {
+    resize: none;
+  }
+  
+  .contact__form-button {
+    padding: 1rem;
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: center;
+  }

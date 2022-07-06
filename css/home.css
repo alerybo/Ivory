@@ -1,0 +1,84 @@
+/*==================== HOME ====================*/
+.home__container {
+    margin-bottom: 3rem;
+  }
+  
+  .home__grid {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    row-gap: 1rem;
+  }
+  
+  .home__subtitle {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 1rem 1rem;
+    letter-spacing: 2px;
+    font-size: var(--small-font-size);
+  }
+  
+  .home__subtitle-symbol {
+    font-size: var(--h1-font-size);
+  }
+  
+  .home__title-container {
+    grid-column: 2/3;
+    position: relative;
+    text-align: center;
+  }
+  
+  .home__title-img {
+    border-radius: 50%;
+    width: 40%;
+  }
+  
+  .home__title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .home__title {
+    font-family: "Playfair Display", serif;
+    font-size: 10rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  
+  .home__title-subtitle {
+    font-size: var(--h1-font-size);
+    letter-spacing: 2px;
+  }
+  
+  .home__scroll {
+    grid-column: 1/4;
+    text-align: center;
+    transition: 0.2s;
+    padding: 2rem;
+  }
+  
+  .home__scroll:hover {
+    transform: translateY(0.25rem);
+  }
+  
+  .home__scroll-button {
+    border: var(--border);
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-color);
+  }
+  
+  .home__scroll-name {
+    padding: 0.5rem;
+    border-right: var(--border);
+    letter-spacing: 1.5px;
+    font-size: var(--smaller-font-size);
+  }
+  
+  .home__scroll-arrow {
+    padding: 0 0.5rem;
+  }

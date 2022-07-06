@@ -9,11 +9,21 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/shop.css">
 
     <title>Ivory</title>
+    <link rel="icon" href="✦">
   </head>
   <body>
     <div class="page__container">
@@ -27,7 +37,7 @@
           <div class="nav__menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#home" class="nav__link">HOME</a>
+                <a href="#" class="nav__link">HOME</a>
               </li>
               <li class="nav__item">
                 <a href="#about" class="nav__link">ABOUT</a>
@@ -42,6 +52,9 @@
                 <a href="#contact" class="nav__link">CONTACT</a>
               </li>
             </ul>
+          </div>
+          <div class="nav__btn">
+            <i class="uil uil-shopping-cart-alt" id="cart-button"></i>
           </div>
           <div class="nav__btn">
             <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -61,7 +74,7 @@
               <div class="home__title-container">
                 <div class="home__title-wrapper">
                   <h1 class="home__title">IVORY</h1>
-                  <span class="home__title-subtitle">SOMETHING FOR YOU</span>
+                  <span class="home__title-subtitle">CLOTHING FOR YOU</span>
                 </div>
                 <img src="/img/home_img.png" alt="" class="home__title-img" />
               </div>
@@ -82,11 +95,19 @@
           </div>
           <div class="about__content">
             <div class="about__img-wrapper">
-              <img src="./img/about_img.jpg" alt="" class="about__img">
+              <img src="./img/about_img.jpg" alt="" class="about__img" />
             </div>
             <div class="about__data">
               <span class="about__data-title">Ivory Clothing</span>
-              <p class="about__data-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="about__data-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
               <div class="about__button">
                 <a href="" class="button">
                   <span class="button-name">SHOP NOW</span>
@@ -105,7 +126,7 @@
             <div class="swiper-wrapper">
               <!--==================== PRODUCT 1 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop1.jpg" alt="" class="shop__img">
+                <img src="./img/shop1.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -113,7 +134,7 @@
               </div>
               <!--==================== PRODUCT 2 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop2.jpg" alt="" class="shop__img">
+                <img src="./img/shop2.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -121,7 +142,7 @@
               </div>
               <!--==================== PRODUCT 3 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop3.jpg" alt="" class="shop__img">
+                <img src="./img/shop3.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -129,7 +150,7 @@
               </div>
               <!--==================== PRODUCT 4 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop4.jpg" alt="" class="shop__img">
+                <img src="./img/shop4.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -137,7 +158,7 @@
               </div>
               <!--==================== PRODUCT 5 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop5.jpg" alt="" class="shop__img">
+                <img src="./img/shop5.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -145,7 +166,7 @@
               </div>
               <!--==================== PRODUCT 6 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop6.jpg" alt="" class="shop__img">
+                <img src="./img/shop6.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -153,7 +174,7 @@
               </div>
               <!--==================== PRODUCT 7 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop7.jpg" alt="" class="shop__img">
+                <img src="./img/shop7.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -161,7 +182,7 @@
               </div>
               <!--==================== PRODUCT 8 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop8.jpg" alt="" class="shop__img">
+                <img src="./img/shop8.jpg" alt="" class="shop__img" />
                 <a href="" class="shop__button button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
@@ -177,25 +198,190 @@
             </div>
             <div class="swiper-pagination swiper-pagination-shop"></div>
           </div>
+
+          <div class="shop__banner">
+            <span class="shop__banner-title">Fabric for You</span>
+            <span class="shop__banner-subtitle">Let us choose what suits your needs best</span>
+            <div class="shop__banner-button">
+              <a href="" class="button">
+                <span class="button-name">READ MORE</span>
+                <i class="uil uil-arrow-right button-icon"></i>
+              </a>
+            </div>
+          </div>
         </section>
 
         <!--==================== BLOG ====================-->
-        <section class="blog section" id="blog"></section>
+        <section class="blog section" id="blog">
+          <div class="section__title"><span>Blog ✦ </span></div>
+
+          <div class="blog__container">
+          <div class="blog__content">
+            <div class="blog__content-text">
+              <h1 class="blog__content-title">ECO AWARE</h1>
+              <p class="blog__content-description">ECO AWARE is a line of clothes designed in line with the idea of sustainable development. The process of obtaining raw materials from ecological plantations - where no chemicals are used and no significant amount of water is used - is friendly for the environment, animals and people involved in production.</p>
+            </div>
+            <div class="blog__content-text">
+              <h1 class="blog__content-title">HSFGHSD</h1>
+              <p class="blog__content-description">fdgsdfgsdgsdfg</p>
+            </div>
+            <div class="blog__content-img">
+              <img src="./img/blog1.jpg" alt="">
+              <div class="blog__overlay">
+                <div class="blog__overlay-button">
+                  <a href="" class="button">
+                    <span class="button-name">READ MORE</span>
+                    <i class="uil uil-arrow-right button-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="blog__content-img">
+              <img src="./img/blog2.jpg" alt="">
+              <div class="blog__overlay">
+                <div class="blog__overlay-button">
+                  <a href="" class="button">
+                    <span class="button-name">READ MORE</span>
+                    <i class="uil uil-arrow-right button-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="blog__content-text">
+              <h1 class="blog__content-title">HSFGHSD</h1>
+              <p class="blog__content-description">fdgsdfgsdgsdfg</p>
+            </div>
+            <div class="blog__content-img">
+              <img src="./img/blog3.jpg" alt="">
+              <div class="blog__overlay">
+                <div class="blog__overlay-button">
+                  <a href="" class="button">
+                    <span class="button-name">READ MORE</span>
+                    <i class="uil uil-arrow-right button-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div</div>
+        </section>
 
         <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact"></section>
+        <section class="contact section" id="contact">
+          <div class="section__title"><span>Contact Us ✦ </span></div>
+          <div class="contact__container">
+              <div class="contact__form">
+                <div class="contact__inputs-item">
+                  <label class="contact__label">NAME</label>
+                  <input type="text" class="contact__input">
+                </div>
+                <div class="contact__inputs-item">
+                  <label class="contact__label">EMAIL</label>
+                  <input type="email" class="contact__input">
+                </div>
+                <div class="contact__inputs-item">
+                  <label class="contact__label">PHONE</label>
+                  <input type="text" class="contact__input">
+                </div>
+                <div class="contact__inputs-item contact__message">
+                  <label class="contact__label">MESSAGE</label>
+                  <textarea cols="0" rows="7" class="contact__input input__message"></textarea>
+                </div>
+                <div class="contact__form-button">
+                  <a href="" class="button">
+                    <span class="button-name">SUBMIT</span>
+                    <i class="uil uil-envelope button-icon"></i>
+                  </a>
+                </div>
+              </div> 
+            </div> 
+        </section>
       </main>
 
       <!--==================== FOOTER ====================-->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo-container">
+            <a href="#" class="footer__logo">IVORY</a>
+          </div>
+          <div class="footer__links-container1 footer__content">
+            <ul class="footer__links">
+              <li>
+                <span class="footer__link-title">CONNECT</span>
+              </li>
+              <li>
+                <a href="" class="footer__link">CONTACT</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">NEWSLETTER</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-container2 footer__content">
+            <ul class="footer__links" id="footer__links_2">
+              <li>
+                <span class="footer__link-title">EXPLORE</span>
+              </li>
+              <li>
+                <a href="" class="footer__link">SHOP</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">BLOG</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">ABOUT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-container3 footer__content">
+            <ul class="footer__links" id="footer__links_3">
+              <li>
+                <span class="footer__link-title">INFO</span>
+              </li>
+              <li>
+                <a href="" class="footer__link">FAQ</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">PRIVACY POLICY</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">TERMS & CONDITIONS</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="" class="footer__social">
+                <i class="uil uil-instagram-alt"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social">
+                <i class="uil uil-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__social">
+                <i class="uil uil-facebook"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__copy">&#169; Aleksandra Rybołowicz</div>
+        </div>
+      </footer>
 
       <!--==================== SCROLL TOP ====================-->
+      <a href="#" class="scroll__top" id="scroll__top">
+        <i class="uil uil-arrow-up scroll__top-icon"></i>
+      </a>
 
-      <!--==================== MAIN JS ====================-->
-      <script src="./js/app.js"></script>
-
-      <!--==================== SWIPER JS ====================-->
-      <script src="./js/swiper-bundle.min.js"></script>
     </div>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./js/App.js"></script>
+    <script src="./js/Navbar.js"></script>
+    <script src="./js/Shop.js"></script>
   </body>
 </html>

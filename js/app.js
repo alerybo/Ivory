@@ -1,16 +1,51 @@
-/*==================== PORTFOLIO SWIPER  ====================*/
-// https://codesandbox.io/s/o0mxvt?file=/index.html:2277-2582
+/*==================== DARK LIGHT THEME ====================*/
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
 
-let swiper = new Swiper(".shop__container", {
-  cssMode: true,
-  loop: true,
+//Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+//validate if the user chose a theme
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+//event listener - activate or deactivate dark theme with the button
+themeButton.addEventListener("click", () => {
+  //add or remove the dark icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  //save the theme and the current icon that the user chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+//Validate the current theme
+const getCurrentTheme = () => {
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+};
+
+const getCurrentIcon = () => {
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+};
+
+/*==================== SCROLL TOP ====================*/
+const scrollTopButton = document.getElementById("scroll__top");
+
+function scrollTop() {
+  const scrollY = window.pageYOffset;
+  if (scrollY >= 560) {
+    scrollTopButton.classList.add("show-scroll");
+  } else {
+    scrollTopButton.classList.remove("show-scroll");
+  }
+}
+
+window.addEventListener("scroll", scrollTop);
