@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/Modal.css">
 
     <title>Ivory</title>
     <link rel="icon" href="✦">
@@ -109,7 +110,7 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div class="about__button">
-                <a href="" class="button">
+                <a href="" class="button" id="shop__modal__button">
                   <span class="button-name">SHOP NOW</span>
                   <i class="uil uil-arrow-right button-icon"></i>
                 </a>
@@ -202,9 +203,9 @@
           <div class="shop__banner">
             <span class="shop__banner-title">Fabric for You</span>
             <span class="shop__banner-subtitle">Let us choose what suits your needs best</span>
-            <div class="shop__banner-button">
+            <div class="shop__banner-button" id="shop__modal__button">
               <a href="" class="button">
-                <span class="button-name">READ MORE</span>
+                <span class="button-name">SHOP NOW</span>
                 <i class="uil uil-arrow-right button-icon"></i>
               </a>
             </div>
@@ -229,7 +230,7 @@
               <img src="./img/blog1.jpg" alt="">
               <div class="blog__overlay">
                 <div class="blog__overlay-button">
-                  <a href="" class="button">
+                  <a href="" class="button" id="blog__modal__button">
                     <span class="button-name">READ MORE</span>
                     <i class="uil uil-arrow-right button-icon"></i>
                   </a>
@@ -240,7 +241,7 @@
               <img src="./img/blog2.jpg" alt="">
               <div class="blog__overlay">
                 <div class="blog__overlay-button">
-                  <a href="" class="button">
+                  <a href="" class="button" id="blog__modal__button">
                     <span class="button-name">READ MORE</span>
                     <i class="uil uil-arrow-right button-icon"></i>
                   </a>
@@ -255,7 +256,7 @@
               <img src="./img/blog3.jpg" alt="">
               <div class="blog__overlay">
                 <div class="blog__overlay-button">
-                  <a href="" class="button">
+                  <a href="" class="button" id="blog__modal__button">
                     <span class="button-name">READ MORE</span>
                     <i class="uil uil-arrow-right button-icon"></i>
                   </a>
@@ -376,8 +377,23 @@
 
     </div>
 
-    <!--==================== SHOP MODAL ====================-->
-    <div class="modal">
+    
+  <!--==================== SHOP MODAL ====================-->
+    <div class="modal" id="shop__modal">
+      <div class="modal__container">
+        <div class="modal__left">
+          <i class="uil uil-times modal__close" id="close__modal"></i>
+          <span class="modal__icon">
+            <i class="uil uil-wrench"></i>
+          </span>
+          <span class="modal__title">STILL WORKING ON IT...</span>
+          <span class="modal__subtitle">But try adding stuff to the cart!</span>
+        </div>
+        <div class="modal__right"></div>
+      </div>
+    </div>
+
+    <!-- <div class="modal">
       <div class="modal__container">
         <div class="modal__content">
           <i class="uil uil-times modal__close"></i>
@@ -391,7 +407,7 @@
           <img src="./img/modal1.jpg" alt="" class="modal__img">
         </div>
       </div>
-    </div>
+    </div> -->
     <!--==================== NEWSLETTER MODAL ====================-->
     <!-- <div class="modal">
       <div class="modal__container">
@@ -407,6 +423,7 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./js/App.js"></script>
+    <script src="./js/Modal.js"></script>
     <script src="./js/Navbar.js"></script>
     <script src="./js/Shop.js"></script>
   </body>
