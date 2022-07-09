@@ -26,7 +26,7 @@
   height: 100%;
   object-fit: fill;
   opacity: 1;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
@@ -37,18 +37,16 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.blog__content-img:hover img  {
+.blog__content-img:hover img {
   opacity: 0.3;
 }
 
-.blog__content-img:hover .blog__overlay  {
+.blog__content-img:hover .blog__overlay {
   opacity: 1;
 }
-
-
 
 .blog__content-text {
   padding: 3rem;
