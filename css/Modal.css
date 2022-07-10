@@ -67,6 +67,7 @@
 
 .modal__title {
   font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
@@ -83,4 +84,33 @@
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+@media screen and (max-width: 769px) {
+  .modal__container {
+    width: 90%;
+  }
+  .modal__title {
+    font-size: 1rem;
+  }
+  .modal__left {
+    padding: 6rem 1rem;
+  }
+
+  .modal__subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .modal__container {
+    height: 400px;
+  }
+
+  .modal__left {
+    width: 100%;
+  }
+  .modal__right {
+    display: none;
+  }
 }

@@ -120,6 +120,7 @@
 
   .nav__link {
     letter-spacing: 2px;
+    margin: 0;
   }
 
   #nav__menu__button {
@@ -128,5 +129,19 @@
 
   .nav_menu-mobile {
     top: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav__container{
+    justify-content: flex-end;
+  }
+  .nav__logo-container {
+    flex-grow: 1;
+    border-right: none;
+    justify-content: center;
+  }
+  .nav__logo {
+    margin: 0;
   }
 }

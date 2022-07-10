@@ -106,3 +106,9 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 350px) {
+    .home__title {
+      font-size: 3rem;
+    }
+  }

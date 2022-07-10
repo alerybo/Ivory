@@ -64,6 +64,7 @@
   bottom: -1.5rem;
 }
 
+
 /*==================== SHOP banner ====================*/
 .shop__banner {
   height: 200px;
@@ -75,6 +76,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  color: #474747;
 }
 
 .shop__banner-title {
@@ -87,6 +89,17 @@
   font-size: var(--h3-font-size);
 }
 
+.shop__banner-button .button {
+  border: 0.1rem solid #474747;
+}
+.shop__banner-button .button-name {
+  color: #474747;
+  border-right: 0.1rem solid #474747;
+}
+.shop__banner-button .button-icon {
+  color: #474747;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 
 /*==================== MEDIUM DEVICES ====================*/
@@ -94,5 +107,16 @@
 @media screen and (max-width: 1200px) {
   .shop__button .button-name {
     letter-spacing: 0.5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .shop__banner {
+    text-align: center;
+  }
+  .shop__banner-title {
+    font-size: 1rem;
+  }
+  .shop__banner-subtitle {
+    font-size: 0.8rem;
   }
 }

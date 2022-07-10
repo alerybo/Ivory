@@ -14,7 +14,7 @@ let swiperShop = new Swiper(".shop__container", {
       clickable: true,
     },
     breakpoints: {
-      568: {
+      480: {
         slidesPerView: 2,
       },
       768: {

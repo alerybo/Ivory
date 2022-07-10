@@ -101,7 +101,38 @@
 }
 
 @media screen and (max-width: 769px) {
-  .contact__form {
-    width: 100%;
+  .footer__content {
+    padding: 0.5rem;
+  }
+  .footer__link {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "logo links1"
+      "links2 links3"
+      "socials copy";
+    border-top: var(--border);
+  }
+
+  .footer__logo-container {
+    border-bottom: var(--border);
+  }
+
+  .footer__links-container1 {
+    border-right: none;
+  }
+
+  .footer__copy {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .footer__social {
+    margin: 0.5rem;
   }
 }

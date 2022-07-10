@@ -73,3 +73,24 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 569px) {
+  .contact__container {
+    padding: 1rem;
+  }
+  .contact__inputs-item {
+    padding: 0.5rem;
+  }
+  .contact__label {
+    font-size: 0.7rem;
+  }
+  .contact__input {
+    width: 100%;
+  }
+  .contact__message {
+    display: block;
+  }
+  .input__message {
+    width: 100%;
+  }
+}

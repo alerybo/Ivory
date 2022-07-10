@@ -68,3 +68,12 @@
     padding: 2rem;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .about__data {
+    padding: 0.5rem;
+  }
+  .about__data-description {
+    font-size: smaller;
+  }
+}
