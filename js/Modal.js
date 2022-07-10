@@ -35,11 +35,21 @@ blogModalBtns.forEach((shopModalBtn) => {
   });
 });
 
-
-
-
-
 /*==================== CLOSING MODALS ====================*/
+//Close by clicking on the X button
+closeModalBtn.addEventListener("click", () => {
+  console.log("dsgasd");
+  closeModal(shopModal);
+  closeModal(blogModal);
+  closeModal(newsletterModal);
+});
+//Close by clicking anywhere outside of the modal
+window.addEventListener("click", (event) => {
+  if (event.target == shopModal) {
+    closeModal(shopModal);
+  }
+});
+
 //add event listener for X (close button)
 // closeModalBtn.forEach((closeModalBtn) => {
 //     closeModalBtn.addEventListener("click", () => {
@@ -50,10 +60,3 @@ blogModalBtns.forEach((shopModalBtn) => {
 //       closeModal(newsletterModal);
 //     });
 //   });
-
-closeModalBtn.addEventListener("click", () => {
-  console.log("dsgasd");
-  closeModal(shopModal);
-  closeModal(blogModal);
-  closeModal(newsletterModal);
-});

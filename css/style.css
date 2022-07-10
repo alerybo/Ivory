@@ -140,3 +140,15 @@ img {
 .show-scroll {
   bottom: 20%;
 }
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+/*==================== MEDIUM DEVICES ====================*/
+
+@media screen and (max-width: 1200px) {
+    .page__container {
+      margin: 1rem;
+    }
+
+}

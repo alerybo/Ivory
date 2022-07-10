@@ -82,3 +82,27 @@
   .home__scroll-arrow {
     padding: 0 0.5rem;
   }
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+/*==================== MEDIUM DEVICES ====================*/
+
+  @media screen and (max-width: 1200px) {
+    .home__title {
+      font-size: 5rem;
+    }    
+    .home__title-subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .home__title-img {
+      border-radius: 50%;
+      width: 60%;
+    }
+    .home__scroll-button {
+      display: none;
+    }
+  }
