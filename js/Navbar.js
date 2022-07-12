@@ -3,8 +3,6 @@ const navMenu = document.getElementById("nav__menu");
 const navButton = document.getElementById("nav__menu__button");
 const navItems = document.querySelectorAll('.nav__item')
 
-console.log(navMenu);
-
 navButton.addEventListener("click", () => {
   navMenu.classList.toggle("nav_menu-mobile");
 });

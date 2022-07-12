@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/Cart.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -63,6 +64,26 @@
             </div>
             <div class="nav__btn">
               <i class="uil uil-moon change-theme" id="theme-button"></i>
+            </div>
+          </div>
+
+            <!--==================== CART ====================-->
+          <div class="cart__container">
+            <div class="cart__title">
+              <h1>CART</h1>
+            </div>
+            <div class="cart__content">
+              <ul class="cart__content-list" id="cart__content-list">
+                <!-- <li class="cart__item">
+                  <img src="./img/shop1.jpg" alt="" class="cart__item-img">
+                  <input type="number" class="cart__item-quantity" id="cart__item-quantity" value="1"></input>
+                  <span class="cart__item-price">$13.00</span>
+                  <a href="" class="cart__remove" id="remove__button">REMOVE</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="cart__total">
+              Total: 0$
             </div>
           </div>
           
@@ -133,64 +154,112 @@
             <div class="swiper-wrapper">
               <!--==================== PRODUCT 1 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop1.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop1.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">T-shirt</p>
+                    <p class="shop_item-price">$12.99</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 2 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop2.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop2.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">pants</p>
+                    <p class="shop_item-price">$15.99</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 3 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop3.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop3.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">T-shirt</p>
+                    <p class="shop_item-price">$12.99</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 4 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop4.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop4.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">pants</p>
+                    <p class="shop_item-price">$20.00</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 5 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop5.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop5.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">shirt</p>
+                    <p class="shop_item-price">$14.99</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 6 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop6.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop6.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">cap</p>
+                    <p class="shop_item-price">$7.89</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 7 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop7.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop7.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">cardigan</p>
+                    <p class="shop_item-price">$23.49</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
               </div>
               <!--==================== PRODUCT 8 ====================-->
               <div class="shop__card swiper-slide">
-                <img src="./img/shop8.jpg" alt="" class="shop__img" />
-                <a href="" class="shop__button button">
+                <div class="shop__img-container">
+                  <img src="./img/shop8.jpg" alt="" class="shop__img" />
+                  <div class="shop_item-overlay">
+                    <p class="shop_item-name">scarf</p>
+                    <p class="shop_item-price">$9.99</p>
+                  </div>
+                </div>
+                <a href="" class="shop__button button" id="shop__button">
                   <span class="button-name">ADD TO CART</span>
                   <i class="uil uil-plus button-icon"></i>
                 </a>
@@ -399,11 +468,14 @@
       </div>
     </div>
 
-    <!--==================== SWIPER JS ====================-->
+
+
+  <!--==================== SWIPER JS ====================-->
     <script src="./js/swiper/swiper-bundle.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
+ <!--==================== MAIN JS ====================-->
     <script src="./js/App.js"></script>
+    <script src="./js/Cart.js"></script>
     <script src="./js/Modal.js"></script>
     <script src="./js/Navbar.js"></script>
     <script src="./js/Shop.js"></script>
