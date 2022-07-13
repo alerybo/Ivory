@@ -1,12 +1,17 @@
 /*==================== CART ====================*/
 .cart__container {
   position: absolute;
-  top: 100%;
+  top: -10000%;
   right: 0;
   width: 40%;
   background-color: var(--bg-color);
   border-left: var(--border);
   border-bottom: var(--border);
+  transition: 0.2s;
+}
+
+.cart__container-active {
+  top: 100%;
 }
 /*==================== TITLE ====================*/
 .cart__title {
