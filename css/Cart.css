@@ -77,6 +77,12 @@
 }
 .cart__checkout {
   padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.cart__checkout:hover{
+  color: var(--light-color);
 }
 
 /*==================== MEDIA QUERIES ====================*/
