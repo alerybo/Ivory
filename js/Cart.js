@@ -130,3 +130,4 @@ function updateCartTotal() {
   //display text in the "total" element
   totalItem.innerHTML = "Total: $" + total;
 }
+

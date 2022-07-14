@@ -37,6 +37,7 @@ const getCurrentIcon = () => {
 };
 
 /*==================== SCROLL TOP ====================*/
+//Showing an arrow if page is scrolled more than 560vh
 const scrollTopButton = document.getElementById("scroll__top");
 
 function scrollTop() {
