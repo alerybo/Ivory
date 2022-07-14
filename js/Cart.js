@@ -45,8 +45,10 @@ function addToCart(price, img, itemID) {
   for (let i = 0; i < cartItems.length; i++) {
     const cartItem = cartItems[i];
     if (cartItem.id === itemID) {
-      //if item is already in the cart - alert user and exit the function
-      alert("This item is already added to the cart");
+      //if item with this ID is already in the cart
+      //increase its quantity by 1
+      let quantity = cartItem.querySelector("#cart__item-quantity");
+      quantity.value = quantity.value * 1 + 1
       return;
     }
   }
@@ -101,15 +103,19 @@ function listenForQuantityChange() {
   });
 }
 
-/*==================== UPDATE TOTAL ====================*/
+/*==================== UPDATE TOTAL PRICE AND COUNTER ====================*/
 
 function updateCartTotal() {
   //cart items - element od the list
   let cartItems = document.getElementsByClassName("cart__item");
   //total element at the bottom of the cart
   let totalItem = document.querySelector(".cart__total");
+  //cart items counter - cart icon in the navbar
+  let itemsCounter = document.getElementById("cart-button");
   //default total price equals to 0
   let total = 0;
+  //default total quantity of items in the cart = 0
+  let counter = 0;
 
   //for each item in the cart
   for (let i = 0; i < cartItems.length; i++) {
@@ -126,8 +132,11 @@ function updateCartTotal() {
     total += itemPrice * itemQuantity;
     //round to 0,01
     total = Math.round(total * 100) / 100;
+    //total quantity is the sum of all quantities
+    counter += itemQuantity * 1;
   }
   //display text in the "total" element
   totalItem.innerHTML = "Total: $" + total;
+  //display total quantity next to cart icon
+  itemsCounter.innerText = counter;
 }
-
